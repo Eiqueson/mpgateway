@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MP Gateway</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="shortcut icon" href="image/mp_icon.png">
+	<link rel="stylesheet" type="text/css" href="css/myCSS.css">
+	<!--script type="text/javascript" src="login.js"></script-->
+</head>
+<body>
+
+<div>
+	<nav class="navbar navbar-default" id="navstyle">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="login.html"><img src="image/mp_logo.png" height="28px"></a>
+		</div>
+		<!--div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="login.html">Login</a></li>
+				<li><a href="">Sign Up</a></li>
+			</ul>
+		</div-->
+	</div>
+	</nav>
+</div>
+
+<!--div class="alert alert-danger" id="alert">Your username or password is invalid</div-->
+
+<div class="container-fluid">
+	<h2>Login</h2>
+	<form class="form-horizontal" action="" method="post">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="uname">Username:</label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" name="username">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="pwd">Password:</label>
+			<div class="col-sm-4">
+				<input type="password" class="form-control" name="password">
+			</div>
+		</div>
+		<!--div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-primary" id="btnLogin">Login</button>
+			</div>
+		</div-->
+	</form>
+	<div class="col-sm-offset-2 col-sm-10">
+		<a href="/admin/index.html"><button class="btn btn-primary">Login</button></a>
+	</div>
+</div>
+
+<!--script type="text/javascript">
+	$(document).ready(function(){
+		$("#alert").hide();
+		$("#btnstyle").click(function(){
+			$("#alert").show();
+		});
+	});
+</script-->
+
+</body>
+<footer>
+	<div>
+		<p align="right">by Wannasak</p>
+	</div>
+</footer>
+</html>

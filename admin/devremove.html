@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MP Gateway</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="shortcut icon" href="image/mp_icon.png">
+	<link rel="stylesheet" type="text/css" href="css/myCSS.css">
+
+	<script type="text/javascript" src="js/blescan.js"></script>
+	<script type="text/javascript" src="js/devremove.js"></script>
+
+</head>
+<body>
+
+<div>
+	<nav class="navbar navbar-default" id="navstyle">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img src="image/mp_logo.png" height="28px"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="">Devices <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="devadd.html">Add Device</a></li>
+						<li><a href="devedit.html">Edit Device</a></li>
+						<li><a href="devremove.html">Remove Device</a></li>
+					</ul>
+				</li>
+				<li><a href="status.html">Status</a></li>
+				<li style="display: none;"><a href="data.html">Data</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a style="color: blue;">Welcome Admin</a></li>
+				<li><a href="">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+</div>
+
+<div class="container-fluid">
+	<h2>Remove Device</h2>
+	<div style="display: inline-block; width: 40%;">
+		<div class="form-group">
+			<label>Device Name: </label>
+			<select id="devname" class="form-control" style="width: 240px;">
+				<option style="color: #cccccc;">- Select a device -</option>
+			</select>
+		</div>
+		<form action="javascript:void(0);" method="post">
+			
+			<button id="devRemoveBtn" type="submit" class="btn btn-default">Remove</button>
+		</form>
+	</div>
+	<div style="display: inline-block; width: 20%;">
+		
+	</div>
+</div>
+
+</body>
+<!--footer class="footer">
+	<div>
+		<p align="right">by Wannasak</p>
+	</div>
+</footer-->
+</html>

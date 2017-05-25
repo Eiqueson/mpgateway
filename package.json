@@ -1,0 +1,12 @@
+{
+  "name": "mpgateway",
+  "version": "0.0.5",
+  "description": "Multi-protocol IoT Gateway",
+  "main": "server.js",
+  "dependencies": {
+    "httpdispatcher": "^2.0.1",
+    "express": "^4.11.0"
+  },
+  "author": "Wannasak Rungpornprasit",
+  "license": "ISC"
+}

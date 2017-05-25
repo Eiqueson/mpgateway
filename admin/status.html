@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MP Gateway</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	
+	<link rel="shortcut icon" href="image/mp_icon.png">
+	<link rel="stylesheet" type="text/css" href="css/myCSS.css">
+	<script type="text/javascript" src="js/showstatus.js"></script>
+
+</head>
+<body>
+
+<div>
+	<nav class="navbar navbar-default" id="navstyle">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img src="image/mp_logo.png" height="28px"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="">Devices <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="devadd.html">Add Device</a></li>
+						<li><a href="devedit.html">Edit Device</a></li>
+						<li><a href="devremove.html">Remove Device</a></li>
+					</ul>
+				</li>
+				<li><a href="status.html">Status</a></li>
+				<li style="display: none;"><a href="data.html">Data</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a style="color: blue;">Welcome Admin</a></li>
+				<li><a href="">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+</div>
+
+<div class="container-fluid" align="center" style="margin-bottom: 20px;">
+	<h2>Device Status</h2>
+</div>
+
+<div class="container-fluid" align="center">
+	<h3 style="display: inline-block;">Registered Devices</h3>
+	<div style="display: inline-block; margin-left: 350px;">
+		
+	</div>
+	<h3 style="display: inline-block;">Device Connections</h3>
+</div>
+
+<div class="container-fluid" align="center">
+	<div id="chart" style="display: inline-block;">
+		<script type="text/javascript" src="devchart.js"></script>
+	</div>
+	<div style="display: inline-block; margin-left: 100px;">
+		
+	</div>
+	<div id="schart" style="display: inline-block;">
+		<script type="text/javascript" src="statuschart.js"></script>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<h3>Devices List</h3>
+	<button class="btn btn-default" id="showlist">Show List</button>
+	<div id="devlistblock">
+		<table id="devtable" class="table table-hover">
+			<thead>
+				<tr>
+					<th>Devicename</th>
+					<th>Location</th>
+					<th>Standard</th>
+					<th>Time Interval (sec)</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!--div class="container-fluid" style="display: none;">
+	<div>
+		<h3 style="margin-bottom: 10px;">Devices Information</h3>
+		<div class="form-group" style="display: inline-block;">
+			<label>Device Name: </label>
+			<select id="devname" class="form-control" style="width: 240px;">
+				<option style="color: #cccccc;">- Select a device -</option>
+			</select>
+		</div>
+		<button style="display: inline-block;" id="devInfoBtn" class="btn btn-default">Show</button>
+	</div>
+	<div>
+		<p id="devnameinfo"></p>
+		<p id="std"></p>
+		<p id="macaddr"></p>
+		<p id="location"></p>
+		<p id="timeint"></p>
+		<p id="topic"></p>
+		<p id="plugin"></p>
+		<p id="desc"></p>
+	</div>
+</div-->
+
+<!--div class="container-fluid" style="display: none;">
+	<div>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Devicename</th>
+					<th>Location</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>LDR1</td>
+					<td>BKK</td>
+					<td style="color: red;">OFFLINE</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div-->
+
+
+
+
+
+</body>
+<!--footer class="footer">
+	<div>
+		<p align="right">by Wannasak</p>
+	</div>
+</footer-->
+</html>

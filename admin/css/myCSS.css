@@ -1,0 +1,63 @@
+#navstyle {
+	background-color: #99ff66;
+	font-size: 16px;
+}
+
+#btnstyle {
+	background-color: #3366ff;
+	color: white;
+}
+
+/*button {
+	background-color: #3366ff;
+	color: white;
+}*/
+
+.footer {
+	background-color: #99ff66;
+	color: black;
+	width: 100%;
+	height: 30px;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	position: absolute;
+}
+
+/*#chart {
+	width: 640px;
+	height: 360px;
+	position: relative;
+}*/
+
+.legend {
+	font-size: 12px;
+}
+rect {
+	stroke-width: 2;
+}
+
+.tooltip {
+	background: #eee;
+	box-shadow: 0 0 5px #999999;
+	color: #333;
+	display: none;
+	font-size: 12px;
+	left: 130px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	top: 95px;
+	width: 80px;
+	z-index: 10;
+}
+
+/*.arc text {
+	font: 10px sans-serif;
+	text-anchor: middle;
+}
+
+.arc path {
+	stroke: #fff;
+}*/
